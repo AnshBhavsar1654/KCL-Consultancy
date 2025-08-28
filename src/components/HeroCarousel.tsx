@@ -16,28 +16,28 @@ const carouselItems = [
     title: "About KCL",
     description: "Discover who we are and what drives us. Explore our vision, mission, and the principles that guide our work with governments, enterprises, and impact organizations.",
     link: "/about",
-    bgImage: "url('https://images.unsplash.com/photo-1578574577315-3fbeb0cecdc2?q=80&w=1932&auto=format&fit=crop')"
+    bgImage: "url('https://www.chihealth.com/content/dam/chihealthcom/images/about-us/providersandpatients.jpg/_jcr_content/renditions/cq5dam.web.1440.810.jpeg')"
   },
   {
     image: "/lovable-uploads/382723f8-f32c-4fa9-abdb-09ffbd64f4e8.png",
     title: "Our Services",
     description: "From research and strategy to execution and evaluation, we deliver end‑to‑end support for lasting impact. Partner with us to solve complex challenges with clarity.",
     link: "/services",
-    bgImage: "url('https://images.unsplash.com/photo-1484807352052-23338990c6c6?q=80&w=1770&auto=format&fit=crop')"
+    bgImage: "url('https://static.vecteezy.com/system/resources/thumbnails/037/894/025/small_2x/startup-business-meeting-to-analyze-and-discuss-the-situation-on-the-financial-report-in-the-meeting-room-investment-consultant-financial-advisor-and-accounting-concept-photo.jpg')"
   },
   {
     image: "/lovable-uploads/382723f8-f32c-4fa9-abdb-09ffbd64f4e8.png",
     title: "Centers of Excellence",
     description: "Deep domain expertise across healthcare, urban rejuvenation, and digital transformation. Purpose‑built teams solving sector‑specific problems at scale.",
     link: "/excellence",
-    bgImage: "url('/lovable-uploads/4.png')"
+    bgImage: "url('https://www.glassjacobson.com/wp-content/uploads/2018/08/What-Does-a-Business-Consultant-Do.png')"
   },
   {
     image: "/lovable-uploads/382723f8-f32c-4fa9-abdb-09ffbd64f4e8.png",
     title: "Humans of KCL",
     description: "Meet the people behind the impact. Stories, voices, and journeys from the team driving real‑world change with empathy and rigor.",
     link: "/humans",
-    bgImage: "url('/lovable-uploads/3.jpg')"
+    bgImage: "url('https://connect-assets.prosple.com/cdn/ff/1vwyKcm9PWSWIhAxMh9lnTREYSNbfedrYNC-2BnNavQ/1567581074/public/styles/scale_890_no_upsize/public/2019-09/feature-article-management-consulting-operations-process-and-technology-838x484-2019.png?itok=J92SPkbJ')"
   }
 ];
 

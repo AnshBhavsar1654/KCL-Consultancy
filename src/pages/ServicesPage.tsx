@@ -218,6 +218,15 @@ const ServicesPage = () => {
               </div>
               <Link to="/contact" className="btn-primary inline-block">Start Digital Transformation</Link>
             </div>
+            <div className="lg:col-span-4">
+              <div className="rounded-lg overflow-hidden">
+                <img 
+                  src="https://www.shutterstock.com/image-photo/female-hand-holding-tablet-creative-600nw-2447467907.jpg" 
+                  alt="Digital governance and analytics" 
+                  className="block w-full h-64 md:h-80 object-cover"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -253,6 +262,15 @@ const ServicesPage = () => {
                 </div>
               </div>
               <Link to="/contact" className="btn-primary inline-block">Request Regulatory Advisory</Link>
+            </div>
+            <div className="lg:col-span-4">
+              <div className="rounded-lg overflow-hidden">
+                <img 
+                  src="https://riddlecompliance.com/wp-content/uploads/2024/06/REGULATORY-COMPLIANCE-CONSULTING.jpg" 
+                  alt="Regulatory compliance and risk controls" 
+                  className="block w-full h-64 md:h-80 object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -567,6 +585,15 @@ const ServicesPage = () => {
               </div>
               <Link to="/contact" className="btn-primary inline-block">Discuss Capacity Building</Link>
             </div>
+            <div className="lg:col-span-4">
+              <div className="rounded-lg overflow-hidden">
+                <img 
+                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCjtXb6Z6ijxijJ1ssnZgu9Zt3U2QHEPwwY3oiS9aC0eg1WDYfln2xpMraFDN7SI1bDbnmBnCkrFi6ZMV9eOeEFODh38DXDPS_sB-LCtAH0HVA1EGuN1gKQ2HXxSVIrilGsc3EvPBA9Gw8hkM-ale68iNzeBMOa5tXt6MRKv_FzwjBXRSmNX-By3M79rc/s1900/Capacity%20Building.jpg" 
+                  alt="Capability building and training" 
+                  className="block w-full h-64 md:h-80 object-cover"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -674,7 +701,7 @@ const ServicesPage = () => {
       </section>
 
       {/* Why Choose Kalliope Consulting? */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900">Why Choose Kalliope Consulting?</h2>
@@ -682,39 +709,43 @@ const ServicesPage = () => {
               We bring together deep expertise, proven methodologies, and a commitment to sustainable impact.
             </p>
           </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
-              <div className="flex items-center mb-3">
-                <ShieldCheck className="text-slate-700 mr-2" size={20} />
-                <h3 className="font-semibold text-slate-900">Deep Expertise</h3>
+            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200">
+              <div className="h-10 w-10 rounded-lg bg-kcl-blue/10 text-kcl-blue flex items-center justify-center mb-3">
+                <ShieldCheck size={20} />
               </div>
+              <h3 className="font-semibold text-slate-900 mb-1">Deep Expertise</h3>
               <p className="text-sm text-slate-600 leading-relaxed">
                 Cross-sector knowledge with practical experience in government, development, and enterprise contexts.
               </p>
             </div>
-            <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
-              <div className="flex items-center mb-3">
-                <CheckCircle className="text-slate-700 mr-2" size={20} />
-                <h3 className="font-semibold text-slate-900">Proven Methodologies</h3>
+
+            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200">
+              <div className="h-10 w-10 rounded-lg bg-kcl-blue/10 text-kcl-blue flex items-center justify-center mb-3">
+                <CheckCircle size={20} />
               </div>
+              <h3 className="font-semibold text-slate-900 mb-1">Proven Methodologies</h3>
               <p className="text-sm text-slate-600 leading-relaxed">
                 Evidence-led frameworks, clear governance, and repeatable delivery models tailored to your objectives.
               </p>
             </div>
-            <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
-              <div className="flex items-center mb-3">
-                <TrendingUp className="text-slate-700 mr-2" size={20} />
-                <h3 className="font-semibold text-slate-900">Measurable Outcomes</h3>
+
+            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200">
+              <div className="h-10 w-10 rounded-lg bg-kcl-blue/10 text-kcl-blue flex items-center justify-center mb-3">
+                <TrendingUp size={20} />
               </div>
+              <h3 className="font-semibold text-slate-900 mb-1">Measurable Outcomes</h3>
               <p className="text-sm text-slate-600 leading-relaxed">
                 Clear KPIs, robust monitoring, and continuous improvement to deliver lasting value at scale.
               </p>
             </div>
-            <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
-              <div className="flex items-center mb-3">
-                <Users className="text-slate-700 mr-2" size={20} />
-                <h3 className="font-semibold text-slate-900">Stakeholder-Centric</h3>
+
+            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200">
+              <div className="h-10 w-10 rounded-lg bg-kcl-blue/10 text-kcl-blue flex items-center justify-center mb-3">
+                <Users size={20} />
               </div>
+              <h3 className="font-semibold text-slate-900 mb-1">Stakeholder-Centric</h3>
               <p className="text-sm text-slate-600 leading-relaxed">
                 Collaborative engagement and co-creation ensure alignment, adoption, and sustained impact.
               </p>

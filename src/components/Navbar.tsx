@@ -1,11 +1,12 @@
-
-import { useState } from 'react';
+ 
+import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronDown, Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const mobileMenuRef = useRef<HTMLDivElement | null>(null);
 
   const toggleDropdown = (dropdown: string) => {
     if (activeDropdown === dropdown) {
@@ -14,6 +15,41 @@ const Navbar = () => {
       setActiveDropdown(dropdown);
     }
   };
+
+  // Close dropdowns when clicking outside (desktop) and close mobile menu when clicking outside
+  useEffect(() => {
+    const handleDocumentClick = (e: MouseEvent | TouchEvent) => {
+      const target = e.target as Node | null;
+      if (!target) return;
+
+      // 1) Desktop dropdowns: if a dropdown is open and the click is not on a trigger or inside a dropdown menu, close it
+      if (activeDropdown) {
+        const isOnDropdownMenu = !!document.querySelector('.dropdown-menu')?.contains(target);
+        const triggerEls = Array.from(document.querySelectorAll('[data-dropdown-trigger]')) as HTMLElement[];
+        const isOnTrigger = triggerEls.some(el => el.contains(target));
+        if (!isOnDropdownMenu && !isOnTrigger) {
+          setActiveDropdown(null);
+        }
+      }
+
+      // 2) Mobile menu: if open and click is outside the menu and not on the toggle button, close it
+      if (isOpen) {
+        const isOnMobileToggle = (e.target as HTMLElement)?.closest?.('[data-mobile-toggle]');
+        const clickedInsideMenu = mobileMenuRef.current?.contains(target);
+        if (!clickedInsideMenu && !isOnMobileToggle) {
+          setIsOpen(false);
+          setActiveDropdown(null);
+        }
+      }
+    };
+
+    document.addEventListener('mousedown', handleDocumentClick);
+    document.addEventListener('touchstart', handleDocumentClick, { passive: true });
+    return () => {
+      document.removeEventListener('mousedown', handleDocumentClick);
+      document.removeEventListener('touchstart', handleDocumentClick);
+    };
+  }, [activeDropdown, isOpen]);
 
   const closeDropdowns = () => {
     setActiveDropdown(null);
@@ -100,6 +136,7 @@ const Navbar = () => {
                   <div>
                     <button 
                       onClick={() => toggleDropdown(item.name)}
+                      data-dropdown-trigger
                       className={`navbar-item flex items-center ${activeDropdown === item.name ? 'text-kcl-blue' : ''}`}
                     >
                       {item.name}
@@ -137,6 +174,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button 
               onClick={() => setIsOpen(!isOpen)}
+              data-mobile-toggle
               className="text-kcl-blue hover:text-kcl-lightblue"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -147,7 +185,7 @@ const Navbar = () => {
 
       {/* Mobile Navigation Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white shadow-inner">
+        <div ref={mobileMenuRef} className="md:hidden bg-white shadow-inner">
           <div className="px-4 pt-2 pb-4 space-y-2">
             {navItems.map((item) => (
               <div key={item.name} className="py-2">

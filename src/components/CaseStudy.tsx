@@ -21,11 +21,11 @@ const CaseStudy: React.FC<CaseStudyProps> = ({
   return (
     <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow ">
       {imageSrc && (
-        <div className="mb-4">
+        <div className="mb-4 rounded-lg overflow-hidden">
           <img 
             src={imageSrc}
             alt={title}
-            className="w-full h-fit object-cover rounded-lg"
+            className="w-full h-56 md:h-64 object-cover"
           />
         </div>
       )}

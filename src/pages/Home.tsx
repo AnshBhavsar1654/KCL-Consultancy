@@ -64,7 +64,7 @@ const Home = () => {
       challenge: "Widespread stigma, religious myths, and lack of awareness led to low donor pledges and higher number of instances of family refusals, especially in rural and semi-urban India.",
       solution: "Partnered with an Ahmedabad based NGO to design a nationwide reform roadmap-combining grassroots campaigns, faith-leader engagement, survivor storytelling, and regulatory submissions targeting consent laws and registry digitization.",
       results: "2.57x rise in awareness, 3,000+ donor pledges, our output documents were submitted to the relevant authority for the broader adoption by the client.",
-      imageSrc: "/lovable-uploads/12.jpg"
+      imageSrc: "https://media.gettyimages.com/id/2194768709/photo/illustration-21-january-2025-berlin-a-drk-employee-places-a-cool-box-for-an-organ-donation-in.jpg?s=612x612&w=0&k=20&c=CW8y3CWmovd8_Y5IXdQWY6lcziWZpckR3JFaJM6bL5M="
     },
     {
       title: "Designing Structural Reforms to Enhance Senior Citizen Living Standards",
@@ -72,7 +72,7 @@ const Home = () => {
       solution: "Developed a policy framework focused on elderly dignity, financial independence, and active ageing. Proposed structural reforms including state-run assisted living networks, digitized pension delivery, age-friendly urban infrastructure norms, and district-level grievance redressal cells. Engaged with senior citizen associations and ran stakeholder consultations across 5 states",
       challenge: "Rapidly ageing population, fragmented welfare schemes, and lack of integrated social support systems led to poor quality of life, isolation, and financial insecurity among senior citizens.",
       results: "Over 1,200 elderly voices represented through the participatory design process.Stakeholder feedback score of 92% satisfaction.",
-      imageSrc: "/lovable-uploads/11.png"
+      imageSrc: "https://www.secondinningshouse.com/wp-content/uploads/2024/11/WhatsApp-Image-2024-11-25-at-4.50.10-PM-1024x537.jpeg"
     }
   ];
 
