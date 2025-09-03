@@ -56,7 +56,7 @@ const ServicesPage = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">Our Services</h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-slate-700 max-w-3xl mx-auto leading-relaxed">
               Comprehensive consulting solutions designed to drive meaningful impact and sustainable growth across public and private sectors.
             </p>
           </div>
@@ -77,7 +77,7 @@ const ServicesPage = () => {
                   <service.icon size={32} />
                 </div>
                 <h3 className="text-lg font-semibold text-slate-900 mb-2">{service.title}</h3>
-                <p className="text-slate-600 text-sm leading-relaxed">{service.desc}</p>
+                <p className="text-slate-700 text-sm leading-relaxed">{service.desc}</p>
                 <div className="flex items-center mt-auto pt-4 text-kcl-blue group-hover:text-kcl-lightblue transition-colors">
                   <span className="text-sm font-medium">Learn more</span>
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -93,48 +93,51 @@ const ServicesPage = () => {
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-8">
-              <div className="text-kcl-blue mb-4">
-                <Search size={36} />
+              <div className="mb-4">
+                <div className="inline-flex items-center bg-sky-100 p-3 rounded-lg mr-3">
+                  <Search className="text-sky-600" size={28} />
+                </div>
               </div>
-              <h2 className="text-3xl md:text-4xl font-semibold text-kcl-blue mb-6">Research & Market Intelligence</h2>
-              <p className="text-lg text-gray-700 mb-8">
+              <h2 className="text-3xl md:text-4xl font-semibold text-slate-900 mb-1">Research & Market Intelligence</h2>
+              <p className="text-sky-700 font-medium mb-6">Evidence-led insights to de-risk decisions</p>
+              <p className="text-lg text-slate-700 mb-8">
                 We provide in-depth research to help you make informed decisions, identify opportunities, and mitigate risks. Our expertise includes:
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                <div className="bg-gray-50 p-5 rounded-lg">
-                  <h4 className="font-semibold text-kcl-blue mb-2">Market Research</h4>
-                  <p className="text-gray-600">Understanding market trends, customer behavior, and competitive landscapes.</p>
+                <div className="bg-sky-50 p-5 rounded-lg border-l-4 border-sky-600">
+                  <h4 className="font-semibold text-slate-900 mb-2">Market Research</h4>
+                  <p className="text-slate-700">Understanding market trends, customer behavior, and competitive landscapes.</p>
                 </div>
                 
-                <div className="bg-gray-50 p-5 rounded-lg">
-                  <h4 className="font-semibold text-kcl-blue mb-2">Market Assessment</h4>
-                  <p className="text-gray-600">Evaluating industry potential, market entry strategies, and business viability.</p>
+                <div className="bg-sky-50 p-5 rounded-lg border-l-4 border-sky-600">
+                  <h4 className="font-semibold text-slate-900 mb-2">Market Assessment</h4>
+                  <p className="text-slate-700">Evaluating industry potential, market entry strategies, and business viability.</p>
                 </div>
                 
-                <div className="bg-gray-50 p-5 rounded-lg">
-                  <h4 className="font-semibold text-kcl-blue mb-2">Field Work</h4>
-                  <p className="text-gray-600">Conducting surveys, interviews, and on-ground data collection for accurate insights.</p>
+                <div className="bg-sky-50 p-5 rounded-lg border-l-4 border-sky-600">
+                  <h4 className="font-semibold text-slate-900 mb-2">Field Work</h4>
+                  <p className="text-slate-700">Conducting surveys, interviews, and on-ground data collection for accurate insights.</p>
                 </div>
                 
-                <div className="bg-gray-50 p-5 rounded-lg">
-                  <h4 className="font-semibold text-kcl-blue mb-2">Policy Benchmarking</h4>
-                  <p className="text-gray-600">Analyzing policies against industry standards to identify gaps and best practices.</p>
+                <div className="bg-sky-50 p-5 rounded-lg border-l-4 border-sky-600">
+                  <h4 className="font-semibold text-slate-900 mb-2">Policy Benchmarking</h4>
+                  <p className="text-slate-700">Analyzing policies against industry standards to identify gaps and best practices.</p>
                 </div>
               </div>
               
-              <div className="bg-gray-50 p-5 rounded-lg mb-8">
-                <h4 className="font-semibold text-kcl-blue mb-2">Regulatory Assessment</h4>
-                <p className="text-gray-600">Reviewing compliance requirements, legal frameworks, and their impact on your business.</p>
+              <div className="bg-gradient-to-br from-sky-50 to-sky-100 p-5 rounded-lg mb-8 border border-sky-200">
+                <h4 className="font-semibold text-slate-900 mb-2">Regulatory Assessment</h4>
+                <p className="text-slate-700">Reviewing compliance requirements, legal frameworks, and their impact on your business.</p>
               </div>
               
-              <Link to="/contact" className="btn-primary inline-block">Request Research Services</Link>
+              <Link to="/contact" className="bg-sky-600 hover:bg-sky-700 text-white px-6 py-3 rounded-lg font-semibold inline-flex items-center transition-colors">Request Research Services <ArrowRight className="ml-2 h-5 w-5" /></Link>
             </div>
             
             <div className="lg:col-span-4">
-              <div className="bg-gray-100 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold mb-4">Our Research Methodology</h3>
-                <ol className="space-y-4">
+              <div className="bg-gradient-to-br from-sky-50 to-sky-100 p-6 rounded-lg border border-sky-200">
+                <h3 className="text-xl font-semibold text-slate-900 mb-4">Our Research Methodology</h3>
+                <ol className="space-y-4 text-slate-700">
                   <li className="flex">
                     <span className="mr-3 font-bold">1.</span>
                     <span>Define research objectives and scope</span>
@@ -191,32 +194,35 @@ const ServicesPage = () => {
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-8">
-              <div className="text-kcl-blue mb-4">
-                <Cpu size={36} />
+              <div className="mb-4">
+                <div className="inline-flex items-center bg-indigo-100 p-3 rounded-lg">
+                  <Cpu className="text-indigo-600" size={28} />
+                </div>
               </div>
-              <h2 className="text-3xl md:text-4xl font-semibold text-kcl-blue mb-6">Digital Governance & Transformation</h2>
-              <p className="text-lg text-gray-700 mb-8">
+              <h2 className="text-3xl md:text-4xl font-semibold text-slate-900 mb-1">Digital Governance & Transformation</h2>
+              <p className="text-indigo-700 font-medium mb-6">Technology roadmaps that elevate governance and delivery</p>
+              <p className="text-lg text-slate-700 mb-8">
                 Harness technology to enhance governance effectiveness, service delivery, and institutional accountability.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                <div className="bg-white p-5 rounded-lg shadow-sm">
-                  <h4 className="font-semibold text-kcl-blue mb-2">Digital Strategy</h4>
-                  <p className="text-gray-600">Roadmaps aligning technology investments with policy priorities and outcomes.</p>
+                <div className="bg-indigo-50 p-5 rounded-lg border-l-4 border-indigo-600">
+                  <h4 className="font-semibold text-slate-900 mb-2">Digital Strategy</h4>
+                  <p className="text-slate-700">Roadmaps aligning technology investments with policy priorities and outcomes.</p>
                 </div>
-                <div className="bg-white p-5 rounded-lg shadow-sm">
-                  <h4 className="font-semibold text-kcl-blue mb-2">GovTech Platforms</h4>
-                  <p className="text-gray-600">Design and implementation of citizen-centric digital services and platforms.</p>
+                <div className="bg-indigo-50 p-5 rounded-lg border-l-4 border-indigo-600">
+                  <h4 className="font-semibold text-slate-900 mb-2">GovTech Platforms</h4>
+                  <p className="text-slate-700">Design and implementation of citizen-centric digital services and platforms.</p>
                 </div>
-                <div className="bg-white p-5 rounded-lg shadow-sm">
-                  <h4 className="font-semibold text-kcl-blue mb-2">Data & Analytics</h4>
-                  <p className="text-gray-600">Building data pipelines, dashboards, and decision intelligence systems.</p>
+                <div className="bg-indigo-50 p-5 rounded-lg border-l-4 border-indigo-600">
+                  <h4 className="font-semibold text-slate-900 mb-2">Data & Analytics</h4>
+                  <p className="text-slate-700">Building data pipelines, dashboards, and decision intelligence systems.</p>
                 </div>
-                <div className="bg-white p-5 rounded-lg shadow-sm">
-                  <h4 className="font-semibold text-kcl-blue mb-2">Security & Privacy</h4>
-                  <p className="text-gray-600">Risk-based controls, privacy-by-design, and regulatory compliance.</p>
+                <div className="bg-indigo-50 p-5 rounded-lg border-l-4 border-indigo-600">
+                  <h4 className="font-semibold text-slate-900 mb-2">Security & Privacy</h4>
+                  <p className="text-slate-700">Risk-based controls, privacy-by-design, and regulatory compliance.</p>
                 </div>
               </div>
-              <Link to="/contact" className="btn-primary inline-block">Start Digital Transformation</Link>
+              <Link to="/contact" className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg font-semibold inline-flex items-center transition-colors">Start Digital Transformation <ArrowRight className="ml-2 h-5 w-5" /></Link>
             </div>
             <div className="lg:col-span-4">
               <div className="rounded-lg overflow-hidden">
@@ -236,32 +242,35 @@ const ServicesPage = () => {
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-8">
-              <div className="text-kcl-blue mb-4">
-                <ShieldCheck size={36} />
+              <div className="mb-4">
+                <div className="inline-flex items-center bg-emerald-100 p-3 rounded-lg">
+                  <ShieldCheck className="text-emerald-700" size={28} />
+                </div>
               </div>
-              <h2 className="text-3xl md:text-4xl font-semibold text-kcl-blue mb-6">Regulatory Advisory & Compliance</h2>
-              <p className="text-lg text-gray-700 mb-8">
+              <h2 className="text-3xl md:text-4xl font-semibold text-slate-900 mb-1">Regulatory Advisory & Compliance</h2>
+              <p className="text-emerald-700 font-medium mb-6">Practical compliance frameworks that build trust</p>
+              <p className="text-lg text-slate-700 mb-8">
                 Navigate complex regulatory landscapes with confidence. Stay ahead of regulatory changes, minimize compliance risks, and build stakeholder trust.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                <div className="bg-white p-5 rounded-lg shadow-sm">
-                  <h4 className="font-semibold text-kcl-blue mb-2">Regulatory Mapping</h4>
-                  <p className="text-gray-600">Comprehensive review of applicable laws, standards, and sectoral guidelines.</p>
+                <div className="bg-emerald-50 p-5 rounded-lg border-l-4 border-emerald-700">
+                  <h4 className="font-semibold text-slate-900 mb-2">Regulatory Mapping</h4>
+                  <p className="text-slate-700">Comprehensive review of applicable laws, standards, and sectoral guidelines.</p>
                 </div>
-                <div className="bg-white p-5 rounded-lg shadow-sm">
-                  <h4 className="font-semibold text-kcl-blue mb-2">Compliance Frameworks</h4>
-                  <p className="text-gray-600">Design of practical policies, SOPs, and audit mechanisms.</p>
+                <div className="bg-emerald-50 p-5 rounded-lg border-l-4 border-emerald-700">
+                  <h4 className="font-semibold text-slate-900 mb-2">Compliance Frameworks</h4>
+                  <p className="text-slate-700">Design of practical policies, SOPs, and audit mechanisms.</p>
                 </div>
-                <div className="bg-white p-5 rounded-lg shadow-sm">
-                  <h4 className="font-semibold text-kcl-blue mb-2">Risk & Controls</h4>
-                  <p className="text-gray-600">Proactive risk identification and control implementation.</p>
+                <div className="bg-emerald-50 p-5 rounded-lg border-l-4 border-emerald-700">
+                  <h4 className="font-semibold text-slate-900 mb-2">Risk & Controls</h4>
+                  <p className="text-slate-700">Proactive risk identification and control implementation.</p>
                 </div>
-                <div className="bg-white p-5 rounded-lg shadow-sm">
-                  <h4 className="font-semibold text-kcl-blue mb-2">Regulatory Engagement</h4>
-                  <p className="text-gray-600">Interface with regulators and industry bodies for clarity and alignment.</p>
+                <div className="bg-emerald-50 p-5 rounded-lg border-l-4 border-emerald-700">
+                  <h4 className="font-semibold text-slate-900 mb-2">Regulatory Engagement</h4>
+                  <p className="text-slate-700">Interface with regulators and industry bodies for clarity and alignment.</p>
                 </div>
               </div>
-              <Link to="/contact" className="btn-primary inline-block">Request Regulatory Advisory</Link>
+              <Link to="/contact" className="bg-emerald-700 hover:bg-emerald-800 text-white px-6 py-3 rounded-lg font-semibold inline-flex items-center transition-colors">Request Regulatory Advisory <ArrowRight className="ml-2 h-5 w-5" /></Link>
             </div>
             <div className="lg:col-span-4">
               <div className="rounded-lg overflow-hidden">
@@ -281,62 +290,65 @@ const ServicesPage = () => {
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-4 lg:order-2">
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold mb-4">Featured Case Study</h3>
-                <p className="text-gray-600 mb-4">
+              <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-lg border border-orange-200">
+                <h3 className="text-xl font-semibold mb-4 text-slate-900">Featured Case Study</h3>
+                <p className="text-slate-700 mb-4">
                   We helped a national government develop a comprehensive healthcare policy framework, resulting in improved access to services for over 5 million citizens.
                 </p>
                 <div className="flex justify-between items-center">
-                  <span className="text-sm text-gray-500">Healthcare Policy Reform</span>
-                  <Link to="#strategy-case-studies" className="text-kcl-blue hover:underline">View Details</Link>
+                  <span className="text-sm text-slate-700 bg-white px-3 py-1 rounded-full">Healthcare Policy Reform</span>
+                  <Link to="#strategy-case-studies" className="text-orange-600 hover:text-orange-700 font-medium">View Details →</Link>
                 </div>
               </div>
             </div>
             
             <div className="lg:col-span-8 lg:order-1">
-              <div className="text-kcl-blue mb-4">
-                <TrendingUp size={36} />
+              <div className="mb-4">
+                <div className="inline-flex items-center bg-orange-100 p-3 rounded-lg">
+                  <TrendingUp className="text-orange-600" size={28} />
+                </div>
               </div>
-              <h2 className="text-3xl md:text-4xl font-semibold text-kcl-blue mb-6">Strategy Development & Facilitation</h2>
-              <p className="text-lg text-gray-700 mb-8">
+              <h2 className="text-3xl md:text-4xl font-semibold text-slate-900 mb-1">Strategy Development & Facilitation</h2>
+              <p className="text-orange-700 font-medium mb-6">Actionable roadmaps for sustainable growth</p>
+              <p className="text-lg text-slate-700 mb-8">
                 Success starts with a well-defined strategy. We assist organizations in shaping policies and frameworks for sustainable growth.
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                <div className="bg-white p-5 rounded-lg shadow-sm">
-                  <h4 className="font-semibold text-kcl-blue mb-2">Policy Conceptualization & Formulation</h4>
-                  <p className="text-gray-600">Designing effective policies based on global best practices and local needs.</p>
+                <div className="bg-orange-50 p-5 rounded-lg border-l-4 border-orange-600">
+                  <h4 className="font-semibold text-slate-900 mb-2">Policy Conceptualization & Formulation</h4>
+                  <p className="text-slate-700">Designing effective policies based on global best practices and local needs.</p>
                 </div>
                 
-                <div className="bg-white p-5 rounded-lg shadow-sm">
-                  <h4 className="font-semibold text-kcl-blue mb-2">Project Management</h4>
-                  <p className="text-gray-600">Structuring, planning, and overseeing projects to ensure timely and efficient execution.</p>
+                <div className="bg-orange-50 p-5 rounded-lg border-l-4 border-orange-600">
+                  <h4 className="font-semibold text-slate-900 mb-2">Project Management</h4>
+                  <p className="text-slate-700">Structuring, planning, and overseeing projects to ensure timely and efficient execution.</p>
                 </div>
                 
-                <div className="bg-white p-5 rounded-lg shadow-sm">
-                  <h4 className="font-semibold text-kcl-blue mb-2">Gap Analysis & Reengineering</h4>
-                  <p className="text-gray-600">Identifying areas of improvement and opportunities for optimization.</p>
+                <div className="bg-orange-50 p-5 rounded-lg border-l-4 border-orange-600">
+                  <h4 className="font-semibold text-slate-900 mb-2">Gap Analysis & Reengineering</h4>
+                  <p className="text-slate-700">Identifying areas of improvement and opportunities for optimization.</p>
                 </div>
                 
-                <div className="bg-white p-5 rounded-lg shadow-sm">
-                  <h4 className="font-semibold text-kcl-blue mb-2">Organizational Restructuring</h4>
-                  <p className="text-gray-600">Streamlining operations and improving organizational efficiency.</p>
+                <div className="bg-orange-50 p-5 rounded-lg border-l-4 border-orange-600">
+                  <h4 className="font-semibold text-slate-900 mb-2">Organizational Restructuring</h4>
+                  <p className="text-slate-700">Streamlining operations and improving organizational efficiency.</p>
                 </div>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                <div className="bg-white p-5 rounded-lg shadow-sm">
-                  <h4 className="font-semibold text-kcl-blue mb-2">Domain Knowledge</h4>
-                  <p className="text-gray-600">Expertise across industries to craft tailored strategies.</p>
+                <div className="bg-orange-50 p-5 rounded-lg border-l-4 border-orange-600">
+                  <h4 className="font-semibold text-slate-900 mb-2">Domain Knowledge</h4>
+                  <p className="text-slate-700">Expertise across industries to craft tailored strategies.</p>
                 </div>
                 
-                <div className="bg-white p-5 rounded-lg shadow-sm">
-                  <h4 className="font-semibold text-kcl-blue mb-2">Framework + Systems + Technology + Data</h4>
-                  <p className="text-gray-600">Integrating cutting-edge frameworks and technologies for enhanced decision-making.</p>
+                <div className="bg-orange-50 p-5 rounded-lg border-l-4 border-orange-600">
+                  <h4 className="font-semibold text-slate-900 mb-2">Framework + Systems + Technology + Data</h4>
+                  <p className="text-slate-700">Integrating cutting-edge frameworks and technologies for enhanced decision-making.</p>
                 </div>
               </div>
               
-              <Link to="/contact" className="btn-primary inline-block">Request Strategy Services</Link>
+              <Link to="/contact" className="bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-lg font-semibold inline-flex items-center transition-colors">Request Strategy Services <ArrowRight className="ml-2 h-5 w-5" /></Link>
             </div>
           </div>
           
@@ -367,74 +379,77 @@ const ServicesPage = () => {
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-8">
-              <div className="text-kcl-blue mb-4">
-                <BarChart3 size={36} />
+              <div className="mb-4">
+                <div className="inline-flex items-center bg-blue-100 p-3 rounded-lg">
+                  <BarChart3 className="text-blue-700" size={28} />
+                </div>
               </div>
-              <h2 className="text-3xl md:text-4xl font-semibold text-kcl-blue mb-6">Program Delivery & Performance</h2>
-              <p className="text-lg text-gray-700 mb-8">
+              <h2 className="text-3xl md:text-4xl font-semibold text-slate-900 mb-1">Program Delivery & Performance</h2>
+              <p className="text-blue-700 font-medium mb-6">From plan to outcomes with disciplined execution</p>
+              <p className="text-lg text-slate-700 mb-8">
                 Transforming strategy into action with seamless execution and effective governance.
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                <div className="bg-gray-50 p-5 rounded-lg">
-                  <h4 className="font-semibold text-kcl-blue mb-2">Program Implementation</h4>
-                  <p className="text-gray-600">Deploying initiatives that drive measurable outcomes with clear milestones and accountability.</p>
+                <div className="bg-blue-50 p-5 rounded-lg border-l-4 border-blue-600">
+                  <h4 className="font-semibold text-slate-900 mb-2">Program Implementation</h4>
+                  <p className="text-slate-700">Deploying initiatives that drive measurable outcomes with clear milestones and accountability.</p>
                 </div>
                 
-                <div className="bg-gray-50 p-5 rounded-lg">
-                  <h4 className="font-semibold text-kcl-blue mb-2">Stakeholder Management</h4>
-                  <p className="text-gray-600">Ensuring effective collaboration between key players and maintaining alignment with objectives.</p>
+                <div className="bg-blue-50 p-5 rounded-lg border-l-4 border-blue-600">
+                  <h4 className="font-semibold text-slate-900 mb-2">Stakeholder Management</h4>
+                  <p className="text-slate-700">Ensuring effective collaboration between key players and maintaining alignment with objectives.</p>
                 </div>
                 
-                <div className="bg-gray-50 p-5 rounded-lg">
-                  <h4 className="font-semibold text-kcl-blue mb-2">Capacity Development</h4>
-                  <p className="text-gray-600">Building capabilities within organizations for sustainable growth and self-sufficiency.</p>
+                <div className="bg-blue-50 p-5 rounded-lg border-l-4 border-blue-600">
+                  <h4 className="font-semibold text-slate-900 mb-2">Capacity Development</h4>
+                  <p className="text-slate-700">Building capabilities within organizations for sustainable growth and self-sufficiency.</p>
                 </div>
                 
-                <div className="bg-gray-50 p-5 rounded-lg">
-                  <h4 className="font-semibold text-kcl-blue mb-2">Quality Assurance</h4>
-                  <p className="text-gray-600">Maintaining high standards across all initiatives through rigorous quality control processes.</p>
+                <div className="bg-blue-50 p-5 rounded-lg border-l-4 border-blue-600">
+                  <h4 className="font-semibold text-slate-900 mb-2">Quality Assurance</h4>
+                  <p className="text-slate-700">Maintaining high standards across all initiatives through rigorous quality control processes.</p>
                 </div>
               </div>
               
-              <div className="bg-gray-50 p-5 rounded-lg mb-8">
-                <h4 className="font-semibold text-kcl-blue mb-2">MIS System</h4>
-                <p className="text-gray-600">Implementing robust Management Information Systems for data-driven operations and decision-making.</p>
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-5 rounded-lg mb-8 border border-blue-200">
+                <h4 className="font-semibold text-slate-900 mb-2">MIS System</h4>
+                <p className="text-slate-700">Implementing robust Management Information Systems for data-driven operations and decision-making.</p>
               </div>
               
-              <Link to="/contact" className="btn-primary inline-block">Request Implementation Services</Link>
+              <Link to="/contact" className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-lg font-semibold inline-flex items-center transition-colors">Request Implementation Services <ArrowRight className="ml-2 h-5 w-5" /></Link>
             </div>
             
             <div className="lg:col-span-4">
-              <div className="bg-gray-100 p-6 rounded-lg">
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-lg border border-blue-200">
                 <h3 className="text-xl font-semibold mb-4">Our Implementation Approach</h3>
                 <ul className="space-y-4">
                   <li className="flex">
-                    <div className="mr-4 h-6 w-6 rounded-full bg-kcl-blue flex items-center justify-center text-white">1</div>
+                    <div className="mr-4 h-6 w-6 rounded-full bg-blue-700 flex items-center justify-center text-white">1</div>
                     <div>
                       <h4 className="font-semibold">Clear Roadmap</h4>
-                      <p className="text-gray-600">Detailed action plans with defined milestones</p>
+                      <p className="text-slate-700">Detailed action plans with defined milestones</p>
                     </div>
                   </li>
                   <li className="flex">
-                    <div className="mr-4 h-6 w-6 rounded-full bg-kcl-blue flex items-center justify-center text-white">2</div>
+                    <div className="mr-4 h-6 w-6 rounded-full bg-blue-700 flex items-center justify-center text-white">2</div>
                     <div>
                       <h4 className="font-semibold">Stakeholder Alignment</h4>
-                      <p className="text-gray-600">Engaging all relevant parties throughout the process</p>
+                      <p className="text-slate-700">Engaging all relevant parties throughout the process</p>
                     </div>
                   </li>
                   <li className="flex">
-                    <div className="mr-4 h-6 w-6 rounded-full bg-kcl-blue flex items-center justify-center text-white">3</div>
+                    <div className="mr-4 h-6 w-6 rounded-full bg-blue-700 flex items-center justify-center text-white">3</div>
                     <div>
                       <h4 className="font-semibold">Resource Optimization</h4>
-                      <p className="text-gray-600">Efficient allocation of time, talent and budgets</p>
+                      <p className="text-slate-700">Efficient allocation of time, talent and budgets</p>
                     </div>
                   </li>
                   <li className="flex">
-                    <div className="mr-4 h-6 w-6 rounded-full bg-kcl-blue flex items-center justify-center text-white">4</div>
+                    <div className="mr-4 h-6 w-6 rounded-full bg-blue-700 flex items-center justify-center text-white">4</div>
                     <div>
                       <h4 className="font-semibold">Continuous Monitoring</h4>
-                      <p className="text-gray-600">Regular tracking of progress against KPIs</p>
+                      <p className="text-slate-700">Regular tracking of progress against KPIs</p>
                     </div>
                   </li>
                 </ul>
@@ -469,27 +484,27 @@ const ServicesPage = () => {
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-4 lg:order-2">
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold mb-4">Our Evaluation Framework</h3>
+              <div className="bg-gradient-to-br from-violet-50 to-violet-100 p-6 rounded-lg border border-violet-200">
+                <h3 className="text-xl font-semibold text-slate-900 mb-4">Our Evaluation Framework</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start">
-                    <span className="font-bold text-kcl-blue mr-2">•</span>
+                    <span className="font-bold text-violet-700 mr-2">•</span>
                     <span>Clearly defined metrics aligned with objectives</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="font-bold text-kcl-blue mr-2">•</span>
+                    <span className="font-bold text-violet-700 mr-2">•</span>
                     <span>Regular data collection through multiple channels</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="font-bold text-kcl-blue mr-2">•</span>
+                    <span className="font-bold text-violet-700 mr-2">•</span>
                     <span>Sophisticated analysis using both quantitative and qualitative approaches</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="font-bold text-kcl-blue mr-2">•</span>
+                    <span className="font-bold text-violet-700 mr-2">•</span>
                     <span>Actionable insights that drive continuous improvement</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="font-bold text-kcl-blue mr-2">•</span>
+                    <span className="font-bold text-violet-700 mr-2">•</span>
                     <span>Transparent reporting to all stakeholders</span>
                   </li>
                 </ul>
@@ -497,37 +512,40 @@ const ServicesPage = () => {
             </div>
             
             <div className="lg:col-span-8 lg:order-1">
-              <div className="text-kcl-blue mb-4">
-                <PieChart size={36} />
+              <div className="mb-4">
+                <div className="inline-flex items-center bg-violet-100 p-3 rounded-lg">
+                  <PieChart className="text-violet-700" size={28} />
+                </div>
               </div>
-              <h2 className="text-3xl md:text-4xl font-semibold text-kcl-blue mb-6">Programme Design & Evaluation</h2>
-              <p className="text-lg text-gray-700 mb-8">
+              <h2 className="text-3xl md:text-4xl font-semibold text-slate-900 mb-1">Programme Design & Evaluation</h2>
+              <p className="text-violet-700 font-medium mb-6">Measure what matters, improve what works</p>
+              <p className="text-lg text-slate-700 mb-8">
                 Design, launch, and measure high-impact programs with robust monitoring and evaluation frameworks that ensure sustainable results.
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                <div className="bg-white p-5 rounded-lg shadow-sm">
-                  <h4 className="font-semibold text-kcl-blue mb-2">Monitoring & Evaluation</h4>
-                  <p className="text-gray-600">Implementing a 360-degree monitoring approach to track progress and ensure objectives are met.</p>
+                <div className="bg-violet-50 p-5 rounded-lg border-l-4 border-violet-700">
+                  <h4 className="font-semibold text-slate-900 mb-2">Monitoring & Evaluation</h4>
+                  <p className="text-slate-700">Implementing a 360-degree monitoring approach to track progress and ensure objectives are met.</p>
                 </div>
                 
-                <div className="bg-white p-5 rounded-lg shadow-sm">
-                  <h4 className="font-semibold text-kcl-blue mb-2">Impact Assessment</h4>
-                  <p className="text-gray-600">Measuring success and refining strategies based on data-driven insights and outcomes.</p>
+                <div className="bg-violet-50 p-5 rounded-lg border-l-4 border-violet-700">
+                  <h4 className="font-semibold text-slate-900 mb-2">Impact Assessment</h4>
+                  <p className="text-slate-700">Measuring success and refining strategies based on data-driven insights and outcomes.</p>
                 </div>
                 
-                <div className="bg-white p-5 rounded-lg shadow-sm">
-                  <h4 className="font-semibold text-kcl-blue mb-2">Performance Management</h4>
-                  <p className="text-gray-600">Setting performance standards and evaluating against global best practices.</p>
+                <div className="bg-violet-50 p-5 rounded-lg border-l-4 border-violet-700">
+                  <h4 className="font-semibold text-slate-900 mb-2">Performance Management</h4>
+                  <p className="text-slate-700">Setting performance standards and evaluating against global best practices.</p>
                 </div>
                 
-                <div className="bg-white p-5 rounded-lg shadow-sm">
-                  <h4 className="font-semibold text-kcl-blue mb-2">Capability Assessment</h4>
-                  <p className="text-gray-600">Identifying organizational strengths and areas for development to build capacity.</p>
+                <div className="bg-violet-50 p-5 rounded-lg border-l-4 border-violet-700">
+                  <h4 className="font-semibold text-slate-900 mb-2">Capability Assessment</h4>
+                  <p className="text-slate-700">Identifying organizational strengths and areas for development to build capacity.</p>
                 </div>
               </div>
               
-              <Link to="/contact" className="btn-primary inline-block">Request Evaluation Services</Link>
+              <Link to="/contact" className="bg-violet-700 hover:bg-violet-800 text-white px-6 py-3 rounded-lg font-semibold inline-flex items-center transition-colors">Request Evaluation Services <ArrowRight className="ml-2 h-5 w-5" /></Link>
             </div>
           </div>
           
@@ -558,32 +576,35 @@ const ServicesPage = () => {
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-8">
-              <div className="text-kcl-blue mb-4">
-                <GraduationCap size={36} />
+              <div className="mb-4">
+                <div className="inline-flex items-center bg-cyan-100 p-3 rounded-lg">
+                  <GraduationCap className="text-cyan-700" size={28} />
+                </div>
               </div>
-              <h2 className="text-3xl md:text-4xl font-semibold text-kcl-blue mb-6">Capacity Building & Institutional Strengthening</h2>
-              <p className="text-lg text-gray-700 mb-8">
+              <h2 className="text-3xl md:text-4xl font-semibold text-slate-900 mb-1">Capacity Building & Institutional Strengthening</h2>
+              <p className="text-cyan-700 font-medium mb-6">Enable people, embed processes, ensure continuity</p>
+              <p className="text-lg text-slate-700 mb-8">
                 Empower teams and strengthen institutions with tailored capacity-building programs and governance systems for sustained outcomes.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                <div className="bg-gray-50 p-5 rounded-lg">
-                  <h4 className="font-semibold text-kcl-blue mb-2">Training & Workshops</h4>
-                  <p className="text-gray-600">Role-based curricula, toolkits, simulations, and on-the-job enablement.</p>
+                <div className="bg-cyan-50 p-5 rounded-lg border-l-4 border-cyan-700">
+                  <h4 className="font-semibold text-slate-900 mb-2">Training & Workshops</h4>
+                  <p className="text-slate-700">Role-based curricula, toolkits, simulations, and on-the-job enablement.</p>
                 </div>
-                <div className="bg-gray-50 p-5 rounded-lg">
-                  <h4 className="font-semibold text-kcl-blue mb-2">Process Institutionalization</h4>
-                  <p className="text-gray-600">Embedding systems, SOPs, and governance mechanisms for scale and continuity.</p>
+                <div className="bg-cyan-50 p-5 rounded-lg border-l-4 border-cyan-700">
+                  <h4 className="font-semibold text-slate-900 mb-2">Process Institutionalization</h4>
+                  <p className="text-slate-700">Embedding systems, SOPs, and governance mechanisms for scale and continuity.</p>
                 </div>
-                <div className="bg-gray-50 p-5 rounded-lg">
-                  <h4 className="font-semibold text-kcl-blue mb-2">Change Management</h4>
-                  <p className="text-gray-600">Structured adoption strategies, communications, and leadership alignment.</p>
+                <div className="bg-cyan-50 p-5 rounded-lg border-l-4 border-cyan-700">
+                  <h4 className="font-semibold text-slate-900 mb-2">Change Management</h4>
+                  <p className="text-slate-700">Structured adoption strategies, communications, and leadership alignment.</p>
                 </div>
-                <div className="bg-gray-50 p-5 rounded-lg">
-                  <h4 className="font-semibold text-kcl-blue mb-2">Capability Assessment</h4>
-                  <p className="text-gray-600">Diagnostics to identify gaps, design learning journeys, and track progress.</p>
+                <div className="bg-cyan-50 p-5 rounded-lg border-l-4 border-cyan-700">
+                  <h4 className="font-semibold text-slate-900 mb-2">Capability Assessment</h4>
+                  <p className="text-slate-700">Diagnostics to identify gaps, design learning journeys, and track progress.</p>
                 </div>
               </div>
-              <Link to="/contact" className="btn-primary inline-block">Discuss Capacity Building</Link>
+              <Link to="/contact" className="bg-cyan-700 hover:bg-cyan-800 text-white px-6 py-3 rounded-lg font-semibold inline-flex items-center transition-colors">Discuss Capacity Building <ArrowRight className="ml-2 h-5 w-5" /></Link>
             </div>
             <div className="lg:col-span-4">
               <div className="rounded-lg overflow-hidden">
@@ -603,98 +624,81 @@ const ServicesPage = () => {
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-8">
-              <div className="text-kcl-blue mb-4">
-                <Users size={36} />
+              <div className="mb-4">
+                <div className="inline-flex items-center bg-amber-100 p-3 rounded-lg">
+                  <Users className="text-amber-700" size={28} />
+                </div>
               </div>
-              <h2 className="text-3xl md:text-4xl font-semibold text-kcl-blue mb-6">Stakeholder Consultations & Public Engagement</h2>
-              <p className="text-lg text-gray-700 mb-8">
+              <h2 className="text-3xl md:text-4xl font-semibold text-slate-900 mb-1">Stakeholder Consultations & Public Engagement</h2>
+              <p className="text-amber-700 font-medium mb-6">Co-create with communities for lasting adoption</p>
+              <p className="text-lg text-slate-700 mb-8">
                 Build trust, legitimacy, and develop better policies through strategic stakeholder engagement and comprehensive public consultation processes.
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                <div className="bg-gray-50 p-5 rounded-lg">
-                  <h4 className="font-semibold text-kcl-blue mb-2">Community Engagement</h4>
-                  <p className="text-gray-600">Collaborating with stakeholders to ensure inclusivity and long-term success of initiatives.</p>
+                <div className="bg-amber-50 p-5 rounded-lg border-l-4 border-amber-700">
+                  <h4 className="font-semibold text-slate-900 mb-2">Community Engagement</h4>
+                  <p className="text-slate-700">Collaborating with stakeholders to ensure inclusivity and long-term success of initiatives.</p>
                 </div>
                 
-                <div className="bg-gray-50 p-5 rounded-lg">
-                  <h4 className="font-semibold text-kcl-blue mb-2">Advocacy</h4>
-                  <p className="text-gray-600">Championing causes that align with organizational values and public good.</p>
+                <div className="bg-amber-50 p-5 rounded-lg border-l-4 border-amber-700">
+                  <h4 className="font-semibold text-slate-900 mb-2">Advocacy</h4>
+                  <p className="text-slate-700">Championing causes that align with organizational values and public good.</p>
                 </div>
                 
-                <div className="bg-gray-50 p-5 rounded-lg">
-                  <h4 className="font-semibold text-kcl-blue mb-2">Amplification</h4>
-                  <p className="text-gray-600">Enhancing visibility and influence through strategic communication and outreach.</p>
+                <div className="bg-amber-50 p-5 rounded-lg border-l-4 border-amber-700">
+                  <h4 className="font-semibold text-slate-900 mb-2">Amplification</h4>
+                  <p className="text-slate-700">Enhancing visibility and influence through strategic communication and outreach.</p>
                 </div>
                 
-                <div className="bg-gray-50 p-5 rounded-lg">
-                  <h4 className="font-semibold text-kcl-blue mb-2">Stakeholder Engagement</h4>
-                  <p className="text-gray-600">Building strong relationships with key stakeholders to ensure alignment and collaboration.</p>
+                <div className="bg-amber-50 p-5 rounded-lg border-l-4 border-amber-700">
+                  <h4 className="font-semibold text-slate-900 mb-2">Stakeholder Engagement</h4>
+                  <p className="text-slate-700">Building strong relationships with key stakeholders to ensure alignment and collaboration.</p>
                 </div>
               </div>
               
-              <div className="bg-gray-50 p-5 rounded-lg mb-8">
-                <h4 className="font-semibold text-kcl-blue mb-2">Mission & Values Integration</h4>
-                <p className="text-gray-600">Embedding core organizational values into policies and initiatives to drive purpose-driven impact.</p>
+              <div className="bg-gradient-to-br from-amber-50 to-amber-100 p-5 rounded-lg mb-8 border border-amber-200">
+                <h4 className="font-semibold text-slate-900 mb-2">Mission & Values Integration</h4>
+                <p className="text-slate-700">Embedding core organizational values into policies and initiatives to drive purpose-driven impact.</p>
               </div>
               
-              <Link to="/contact" className="btn-primary inline-block">Request Community Services</Link>
+              <Link to="/contact" className="bg-amber-700 hover:bg-amber-800 text-white px-6 py-3 rounded-lg font-semibold inline-flex items-center transition-colors">Request Community Services <ArrowRight className="ml-2 h-5 w-5" /></Link>
             </div>
             
             <div className="lg:col-span-4">
-              <div className="bg-gray-100 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold mb-4">Engagement Principles</h3>
+              <div className="bg-gradient-to-br from-amber-50 to-amber-100 p-6 rounded-lg border border-amber-200">
+                <h3 className="text-xl font-semibold text-slate-900 mb-4">Engagement Principles</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start">
-                    <div className="mr-4 h-6 w-6 rounded-full bg-kcl-blue flex items-center justify-center text-white">1</div>
+                    <div className="mr-4 h-6 w-6 rounded-full bg-amber-700 flex items-center justify-center text-white">1</div>
                     <div>
-                      <h4 className="font-semibold">Inclusivity</h4>
-                      <p className="text-gray-600">Ensuring all voices are heard and represented</p>
+                      <h4 className="font-semibold text-slate-900">Inclusivity</h4>
+                      <p className="text-slate-700">Ensuring all voices are heard and represented</p>
                     </div>
                   </li>
                   <li className="flex items-start">
-                    <div className="mr-4 h-6 w-6 rounded-full bg-kcl-blue flex items-center justify-center text-white">2</div>
+                    <div className="mr-4 h-6 w-6 rounded-full bg-amber-700 flex items-center justify-center text-white">2</div>
                     <div>
-                      <h4 className="font-semibold">Transparency</h4>
-                      <p className="text-gray-600">Open and honest communication with all stakeholders</p>
+                      <h4 className="font-semibold text-slate-900">Transparency</h4>
+                      <p className="text-slate-700">Open and honest communication with all stakeholders</p>
                     </div>
                   </li>
                   <li className="flex items-start">
-                    <div className="mr-4 h-6 w-6 rounded-full bg-kcl-blue flex items-center justify-center text-white">3</div>
+                    <div className="mr-4 h-6 w-6 rounded-full bg-amber-700 flex items-center justify-center text-white">3</div>
                     <div>
-                      <h4 className="font-semibold">Sustainability</h4>
-                      <p className="text-gray-600">Focus on long-term impact and community ownership</p>
+                      <h4 className="font-semibold text-slate-900">Sustainability</h4>
+                      <p className="text-slate-700">Focus on long-term impact and community ownership</p>
                     </div>
                   </li>
                   <li className="flex items-start">
-                    <div className="mr-4 h-6 w-6 rounded-full bg-kcl-blue flex items-center justify-center text-white">4</div>
+                    <div className="mr-4 h-6 w-6 rounded-full bg-amber-700 flex items-center justify-center text-white">4</div>
                     <div>
-                      <h4 className="font-semibold">Evidence-based</h4>
-                      <p className="text-gray-600">Grounding advocacy in solid research and data</p>
+                      <h4 className="font-semibold text-slate-900">Evidence-based</h4>
+                      <p className="text-slate-700">Grounding advocacy in solid research and data</p>
                     </div>
                   </li>
                 </ul>
               </div>
-            </div>
-          </div>
-          
-          <div className="mt-16">
-            <h3 className="text-2xl font-semibold mb-6">Case Studies</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <CaseStudy 
-                title="Public Health Advocacy Campaign"
-                client="National Health Coalition"
-                challenge="A coalition of health organizations needed to advocate for policy changes to address a growing public health crisis but faced opposition from industry groups and public misconceptions."
-                solution="We developed a comprehensive advocacy strategy including evidence-based messaging, stakeholder mapping and engagement, coalition building, and targeted communication campaigns."
-                results="The campaign successfully influenced policy changes at both national and local levels, leading to new regulations that are projected to improve public health outcomes for millions of citizens."
-              />
-              <CaseStudy 
-                title="Community Engagement for Infrastructure Development"
-                client="Urban Development Authority"
-                challenge="A major urban infrastructure project faced significant community opposition and delays due to inadequate stakeholder engagement in the planning process."
-                solution="We implemented a comprehensive community engagement program with public consultations, co-design workshops, transparent information sharing, and ongoing feedback mechanisms."
-                results="The project gained community support and with the co-operation of community leaders, the district administration could resume the work."
-              />
             </div>
           </div>
         </div>
@@ -705,7 +709,7 @@ const ServicesPage = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900">Why Choose Kalliope Consulting?</h2>
-            <p className="text-lg text-slate-600 mt-4">
+            <p className="text-lg text-slate-700 mt-4">
               We bring together deep expertise, proven methodologies, and a commitment to sustainable impact.
             </p>
           </div>
@@ -716,7 +720,7 @@ const ServicesPage = () => {
                 <ShieldCheck size={20} />
               </div>
               <h3 className="font-semibold text-slate-900 mb-1">Deep Expertise</h3>
-              <p className="text-sm text-slate-600 leading-relaxed">
+              <p className="text-sm text-slate-700 leading-relaxed">
                 Cross-sector knowledge with practical experience in government, development, and enterprise contexts.
               </p>
             </div>
@@ -726,7 +730,7 @@ const ServicesPage = () => {
                 <CheckCircle size={20} />
               </div>
               <h3 className="font-semibold text-slate-900 mb-1">Proven Methodologies</h3>
-              <p className="text-sm text-slate-600 leading-relaxed">
+              <p className="text-sm text-slate-700 leading-relaxed">
                 Evidence-led frameworks, clear governance, and repeatable delivery models tailored to your objectives.
               </p>
             </div>
@@ -736,7 +740,7 @@ const ServicesPage = () => {
                 <TrendingUp size={20} />
               </div>
               <h3 className="font-semibold text-slate-900 mb-1">Measurable Outcomes</h3>
-              <p className="text-sm text-slate-600 leading-relaxed">
+              <p className="text-sm text-slate-700 leading-relaxed">
                 Clear KPIs, robust monitoring, and continuous improvement to deliver lasting value at scale.
               </p>
             </div>
@@ -746,7 +750,7 @@ const ServicesPage = () => {
                 <Users size={20} />
               </div>
               <h3 className="font-semibold text-slate-900 mb-1">Stakeholder-Centric</h3>
-              <p className="text-sm text-slate-600 leading-relaxed">
+              <p className="text-sm text-slate-700 leading-relaxed">
                 Collaborative engagement and co-creation ensure alignment, adoption, and sustained impact.
               </p>
             </div>
