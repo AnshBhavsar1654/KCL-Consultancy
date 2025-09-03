@@ -64,7 +64,7 @@ const HumansPage = () => {
             alignment="left"
           />
           
-          <p className="text-lg text-gray-700 mb-8 max-w-4xl">
+          <p className="text-lg text-slate-700 mb-8 max-w-4xl">
             At KCL, our strength lies in our people. We are a diverse team of young Indian professionals, engineers, and non-engineers, all united by a shared passion for impact, purpose, and innovation. Our multidisciplinary team brings fresh perspectives to solve complex challenges and drive meaningful change across India.
           </p>
         </div>
@@ -82,8 +82,8 @@ const HumansPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {stories.map((story, index) => (
               <div key={index} className="bg-white p-8 rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold mb-4">{story.title}</h3>
-                <p className="text-gray-600 mb-8 italic">"{story.content}"</p>
+                <h3 className="text-xl font-semibold text-slate-900 mb-4">{story.title}</h3>
+                <p className="text-slate-700 mb-8 italic">"{story.content}"</p>
                 <p className="text-right text-kcl-blue font-medium">— {story.author}</p>
               </div>
             ))}
@@ -101,22 +101,22 @@ const HumansPage = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <div className="card">
-              <h3 className="text-xl font-semibold mb-4">Collaboration & Innovation</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-semibold text-slate-900 mb-4">Collaboration & Innovation</h3>
+              <p className="text-slate-700">
                 From brainstorming sessions to strategy discussions, we foster an environment where ideas flow freely and innovation thrives. We believe the best solutions come from diverse perspectives working together.
               </p>
             </div>
             
             <div className="card">
-              <h3 className="text-xl font-semibold mb-4">Learning & Growth</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-semibold text-slate-900 mb-4">Learning & Growth</h3>
+              <p className="text-slate-700">
                 We're committed to the continuous development of our team. Through mentorship, training opportunities, and challenging assignments, we help our people grow both professionally and personally.
               </p>
             </div>
             
             <div className="card">
-              <h3 className="text-xl font-semibold mb-4">Impact & Purpose</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-semibold text-slate-900 mb-4">Impact & Purpose</h3>
+              <p className="text-slate-700">
                 Everyone at KCL contributes to work that matters. We celebrate our successes and learn from our challenges, knowing that our collective efforts create meaningful change across India.
               </p>
             </div>
@@ -125,11 +125,11 @@ const HumansPage = () => {
           <div className="bg-gray-50 p-8 rounded-lg">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div>
-                <h3 className="text-2xl font-semibold mb-4">Our Culture</h3>
-                <p className="text-gray-700 mb-4">
+                <h3 className="text-2xl font-semibold text-slate-900 mb-4">Our Culture</h3>
+                <p className="text-slate-700 mb-4">
                   KCL isn't just a workplace—it's a community. We foster an environment of collaboration, continuous learning, and innovation. From brainstorming sessions to fieldwork, from strategy discussions to team retreats, we create experiences that inspire and energize our people.
                 </p>
-                <p className="text-gray-700">
+                <p className="text-slate-700">
                   We value balance, wellness, and the unique contributions of each team member. Our inclusive culture celebrates diverse perspectives and empowers everyone to bring their authentic selves to work.
                 </p>
               </div>
@@ -251,20 +251,20 @@ const HumansPage = () => {
             {openPositions.map((position, index) => (
               <div key={index} className="bg-white text-gray-800 p-6 rounded-lg shadow-md">
                 <div className="flex flex-wrap justify-between items-start mb-4">
-                  <h4 className="text-xl font-semibold text-kcl-blue">{position.title}</h4>
+                  <h4 className="text-xl font-semibold text-slate-900">{position.title}</h4>
                   <div className="flex flex-wrap gap-2 mt-2 md:mt-0">
                     <span className="bg-gray-100 px-3 py-1 rounded-full text-sm">{position.location}</span>
                     <span className="bg-kcl-blue/10 text-kcl-blue px-3 py-1 rounded-full text-sm">{position.type}</span>
                   </div>
                 </div>
                 
-                <p className="text-gray-600 mb-4">{position.description}</p>
+                <p className="text-slate-700 mb-4">{position.description}</p>
                 
                 <div className="mb-6">
                   <h5 className="font-medium mb-2">Requirements:</h5>
                   <ul className="list-disc pl-5 space-y-1">
                     {position.requirements.map((req, i) => (
-                      <li key={i} className="text-gray-600">{req}</li>
+                      <li key={i} className="text-slate-700">{req}</li>
                     ))}
                   </ul>
                 </div>

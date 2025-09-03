@@ -55,21 +55,21 @@ const ContactPage = () => {
               <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-kcl-blue/10 text-kcl-blue mb-4">
                 <Mail size={24} />
               </div>
-              <h3 className="text-xl font-semibold mb-3">Email Us</h3>
-              <p className="text-gray-600">connect@kalliope.in</p>
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">Email Us</h3>
+              <p className="text-slate-700">connect@kalliope.in</p>
             </div>
             <div className="bg-gray-50 p-6 rounded-lg text-center w-full max-w-sm">
               <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-kcl-blue/10 text-kcl-blue mb-4">
                 <MapPin size={24} />
               </div>
-              <h3 className="text-xl font-semibold mb-3">Address</h3>
-              <p className="text-gray-600">4th Floor,West Gate, Ahmedabad</p>
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">Address</h3>
+              <p className="text-slate-700">4th Floor,West Gate, Ahmedabad</p>
             </div>
           </div>
           
           <div  className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <h3 className="text-2xl font-semibold mb-6">Send Us a Message</h3>
+              <h3 className="text-2xl font-semibold text-slate-900 mb-6">Send Us a Message</h3>
               
               {formSubmitted ? (
                 <div className="bg-green-50 p-6 rounded-lg border border-green-200 text-center">
@@ -81,7 +81,7 @@ const ContactPage = () => {
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                    <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-1">Your Name</label>
                     <input
                       type="text"
                       id="name"
@@ -94,7 +94,7 @@ const ContactPage = () => {
                   </div>
                   
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Your Email</label>
+                    <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-1">Your Email</label>
                     <input
                       type="email"
                       id="email"
@@ -107,7 +107,7 @@ const ContactPage = () => {
                   </div>
                   
                   <div>
-                    <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                    <label htmlFor="subject" className="block text-sm font-medium text-slate-700 mb-1">Subject</label>
                     <select
                       id="subject"
                       name="subject"
@@ -126,7 +126,7 @@ const ContactPage = () => {
                   </div>
                   
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Your Message</label>
+                    <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-1">Your Message</label>
                     <textarea
                       id="message"
                       name="message"
@@ -151,9 +151,9 @@ const ContactPage = () => {
             </div>
             
             <div>
-              <h3 className="text-2xl font-semibold mb-6">Connect With Us</h3>
+              <h3 className="text-2xl font-semibold text-slate-900 mb-6">Connect With Us</h3>
               <div className="bg-gray-100 p-6 rounded-lg">
-                <p className="text-gray-700 mb-6">
+                <p className="text-slate-700 mb-6">
                   We're always looking to connect with organizations and individuals who share our commitment to excellence in governance and policy development.
                 </p>
                 
@@ -161,23 +161,23 @@ const ContactPage = () => {
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-start">
                     <span className="text-black mr-2">•</span>
-                    <span className='text-gray-700'>Discuss your specific governance challenges</span>
+                    <span className='text-slate-700'>Discuss your specific governance challenges</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-black mr-2">•</span>
-                    <span className='text-gray-700'>Explore potential collaborations and partnerships</span>
+                    <span className='text-slate-700'>Explore potential collaborations and partnerships</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-black mr-2">•</span>
-                    <span className='text-gray-700'>Learn more about our services and expertise</span>
+                    <span className='text-slate-700'>Learn more about our services and expertise</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-black mr-2">•</span>
-                    <span className='text-gray-700'>Inquire about career opportunities at KCL</span>
+                    <span className='text-slate-700'>Inquire about career opportunities at KCL</span>
                   </li>
                 </ul>
                 
-                <p className="text-gray-700">
+                <p className="text-slate-700">
                   Whether you're a government agency, private enterprise, non-profit organization, or interested individual, we'd love to hear from you and explore how we can work together.
                 </p>
               </div>
