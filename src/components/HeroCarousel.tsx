@@ -16,28 +16,28 @@ const carouselItems = [
     title: "About KCL",
     description: "Discover who we are and what drives us. Explore our vision, mission, and the principles that guide our work with governments, enterprises, and impact organizations.",
     link: "/about",
-    bgImage: "url('https://www.chihealth.com/content/dam/chihealthcom/images/about-us/providersandpatients.jpg/_jcr_content/renditions/cq5dam.web.1440.810.jpeg')"
+    bgImage: "url('https://media.gettyimages.com/id/1144639848/photo/call-centre-executives-attending-customer-service-requests.jpg?s=612x612&w=0&k=20&c=neHOG6eJR88CJkoL9PaRbXKp_iVeU6OJE0LPXvteuU8=')"
   },
   {
     image: "/lovable-uploads/382723f8-f32c-4fa9-abdb-09ffbd64f4e8.png",
     title: "Our Services",
     description: "From research and strategy to execution and evaluation, we deliver end‑to‑end support for lasting impact. Partner with us to solve complex challenges with clarity.",
     link: "/services",
-    bgImage: "url('https://static.vecteezy.com/system/resources/thumbnails/037/894/025/small_2x/startup-business-meeting-to-analyze-and-discuss-the-situation-on-the-financial-report-in-the-meeting-room-investment-consultant-financial-advisor-and-accounting-concept-photo.jpg')"
+    bgImage: "url('https://media.gettyimages.com/id/973931576/photo/looking-at-business-data.jpg?s=612x612&w=0&k=20&c=br0Ew0nh8wXYNwUqTg_cjSzmRTxbS52ar5EiyXcn4e8=')"
   },
   {
     image: "/lovable-uploads/382723f8-f32c-4fa9-abdb-09ffbd64f4e8.png",
     title: "Centers of Excellence",
     description: "Deep domain expertise across healthcare, urban rejuvenation, and digital transformation. Purpose‑built teams solving sector‑specific problems at scale.",
     link: "/excellence",
-    bgImage: "url('https://www.glassjacobson.com/wp-content/uploads/2018/08/What-Does-a-Business-Consultant-Do.png')"
+    bgImage: "url('https://media.gettyimages.com/id/1152655743/photo/smiling-indian-executives-meet-on-the-factory-floor.jpg?s=612x612&w=0&k=20&c=D5vG34BQ1jBqEEOR6gkYocjFj1JKVRayuR31FHunvg0=')"
   },
   {
     image: "/lovable-uploads/382723f8-f32c-4fa9-abdb-09ffbd64f4e8.png",
     title: "Humans of KCL",
     description: "Meet the people behind the impact. Stories, voices, and journeys from the team driving real‑world change with empathy and rigor.",
     link: "/humans",
-    bgImage: "url('https://connect-assets.prosple.com/cdn/ff/1vwyKcm9PWSWIhAxMh9lnTREYSNbfedrYNC-2BnNavQ/1567581074/public/styles/scale_890_no_upsize/public/2019-09/feature-article-management-consulting-operations-process-and-technology-838x484-2019.png?itok=J92SPkbJ')"
+    bgImage: "url('https://media.gettyimages.com/id/1144647692/photo/corporate-group-portrait-of-cheering-staff-members.jpg?s=612x612&w=0&k=20&c=hgDeW7sDrgX7hn6mBT5SmDNhcsZ14p5H6KolxRsb70k=')"
   }
 ];
 
