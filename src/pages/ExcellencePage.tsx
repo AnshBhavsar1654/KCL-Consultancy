@@ -1,8 +1,8 @@
 
 import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import SectionHeading from '../components/SectionHeading';
-import { Heart, Building, Cpu } from 'lucide-react';
+import { Heart, Building, Cpu, ArrowRight } from 'lucide-react';
 import { scrollToSection } from '../utils/scrollToSection';
 
 const ExcellencePage = () => {
@@ -50,28 +50,32 @@ const ExcellencePage = () => {
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-                <div className="bg-gray-50 p-5 rounded-lg">
-                  <h4 className="font-semibold text-slate-900 mb-2">Digital Health & Telemedicine</h4>
-                  <p className="text-slate-700">Enhancing access to healthcare through digital transformation and remote care solutions.</p>
-                </div>
+                <Link to="/excellence/healthcare/strategic-planning" className="group block focus:outline-none focus-visible:ring-2 focus-visible:ring-kcl-blue/50 rounded-lg">
+                  <div className="relative overflow-hidden bg-gray-50 p-6 rounded-lg ring-1 ring-transparent transition-all duration-200 shadow-sm hover:bg-white hover:shadow-lg hover:ring-kcl-blue/30 hover:-translate-y-0.5">
+                    <div className="absolute inset-x-0 -top-10 h-20 bg-gradient-to-b from-kcl-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <h4 className="font-semibold text-slate-900 mb-2 group-hover:text-kcl-blue">Strategic Planning & Target Setting</h4>
+                    <p className="text-slate-700 group-hover:text-slate-800">Define clear health objectives, prioritize initiatives, and set measurable targets aligned to national and state health outcomes.</p>
+                    <div className="mt-4 flex items-center text-sm font-medium text-kcl-blue opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all">
+                      <span>Learn more</span>
+                      <ArrowRight size={16} className="ml-2 transition-transform group-hover:translate-x-0.5" />
+                    </div>
+                  </div>
+                </Link>
                 
-                <div className="bg-gray-50 p-5 rounded-lg">
-                  <h4 className="font-semibold text-slate-900 mb-2">Health Policy & Systems Strengthening</h4>
-                  <p className="text-slate-700">Crafting policies that improve healthcare efficiency, equity, and outcomes for all populations.</p>
-                </div>
-                
-                <div className="bg-gray-50 p-5 rounded-lg">
-                  <h4 className="font-semibold text-slate-900 mb-2">Data-Driven Healthcare</h4>
-                  <p className="text-slate-700">Leveraging analytics for precision medicine, better health interventions, and improved resource allocation.</p>
-                </div>
-                
-                <div className="bg-gray-50 p-5 rounded-lg">
-                  <h4 className="font-semibold text-slate-900 mb-2">Knowledge Hub</h4>
-                  <p className="text-slate-700">Serving as a center for best practices, innovation, and industry insights in the healthcare sector.</p>
-                </div>
+                <Link to="/excellence/healthcare/evidence-prioritisation" className="group block focus:outline-none focus-visible:ring-2 focus-visible:ring-kcl-blue/50 rounded-lg">
+                  <div className="relative overflow-hidden bg-gray-50 p-6 rounded-lg ring-1 ring-transparent transition-all duration-200 shadow-sm hover:bg-white hover:shadow-lg hover:ring-kcl-blue/30 hover:-translate-y-0.5">
+                    <div className="absolute inset-x-0 -top-10 h-20 bg-gradient-to-b from-kcl-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <h4 className="font-semibold text-slate-900 mb-2 group-hover:text-kcl-blue">Evidence-based Health Prioritisation</h4>
+                    <p className="text-slate-700 group-hover:text-slate-800">Use data, disease burden analysis, and fiscal constraints to prioritize interventions that maximize population health impact.</p>
+                    <div className="mt-4 flex items-center text-sm font-medium text-kcl-blue opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all">
+                      <span>Learn more</span>
+                      <ArrowRight size={16} className="ml-2 transition-transform group-hover:translate-x-0.5" />
+                    </div>
+                  </div>
+                </Link>
               </div>
               
-              <div className="bg-kcl-blue text-white rounded-lg p-8">
+              <div className="bg-kcl-blue text-white rounded-lg p-8 mb-12 md:mb-16">
                 <h3 className="text-2xl font-semibold mb-6">Our Healthcare Impact</h3>
                 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">

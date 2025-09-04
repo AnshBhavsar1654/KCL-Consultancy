@@ -13,6 +13,13 @@ import ContactPage from "./pages/ContactPage";
 import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import HealthcareStrategicPlanning from "./pages/Healthcare2.0/HealthcareStrategicPlanning";
+import HealthcareEvidencePrioritisation from "./pages/Healthcare2.0/HealthcareEvidencePrioritisation";
+import HealthcareStrategicPlanningViksit2047 from "./pages/Healthcare2.0/HealthcareStrategicPlanningViksit2047";
+import HealthcareStrategicPlanningIMR from "./pages/Healthcare2.0/HealthcareStrategicPlanningIMR";
+import HealthcareEvidenceNutrition from "./pages/Healthcare2.0/HealthcareEvidenceNutrition";
+import HealthcareEvidenceNCD from "./pages/Healthcare2.0/HealthcareEvidenceNCD";
+import HealthcareEvidenceMandatoryScreening from "./pages/Healthcare2.0/HealthcareEvidenceMandatoryScreening";
 
 const queryClient = new QueryClient();
 
@@ -38,6 +45,13 @@ const App = () => (
               <Route path="/services/community" element={<ServicesPage />} />
               <Route path="/excellence" element={<ExcellencePage />} />
               <Route path="/excellence/healthcare" element={<ExcellencePage />} />
+              <Route path="/excellence/healthcare/strategic-planning" element={<HealthcareStrategicPlanning />} />
+              <Route path="/excellence/healthcare/strategic-planning/viksit-2047" element={<HealthcareStrategicPlanningViksit2047 />} />
+              <Route path="/excellence/healthcare/strategic-planning/imr" element={<HealthcareStrategicPlanningIMR />} />
+              <Route path="/excellence/healthcare/evidence-prioritisation" element={<HealthcareEvidencePrioritisation />} />
+              <Route path="/excellence/healthcare/evidence-prioritisation/nutrition" element={<HealthcareEvidenceNutrition />} />
+              <Route path="/excellence/healthcare/evidence-prioritisation/ncd" element={<HealthcareEvidenceNCD />} />
+              <Route path="/excellence/healthcare/evidence-prioritisation/mandatory-screening" element={<HealthcareEvidenceMandatoryScreening />} />
               <Route path="/excellence/urban" element={<ExcellencePage />} />
               <Route path="/excellence/digital" element={<ExcellencePage />} />
               <Route path="/humans" element={<HumansPage />} />
